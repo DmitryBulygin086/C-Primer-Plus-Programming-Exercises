@@ -29,7 +29,11 @@
 #define TAX_BRACKET1   300.0
 #define TAX_RATE1      0.15
 
-#define TAX_BRACKET2   (TAX_BRACKET1 + 150.0)
+const double TAX_BRACKET2 =  TAX_BRACKET1 + 150.0;      // VERY IMPORTANT!!!
+// #define TAX_BRACKET1         TAX_BRACKET1 + 150.0    // Just replace TAX_BRACKET with TAX_BRACKET1 + 150.0   
+                                                        // May have critical pitfalls.
+// #define TAX_BRACKET1         ((TAX_BRACKET1) + 150.0)// Correct way if we want to use #define
+
 #define TAX_RATE2 0.2
 
 #define TAX_RATE3 0.25
